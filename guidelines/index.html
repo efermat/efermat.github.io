@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <title>Guidelines | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+      $(function () {
+         $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");
+         $("#inc-footer").load("/efermat.github.io/includes/footer.html");
+      });
+   </script>
+
+   <style>
+      ol#checkList {
+         list-style-type: decimal;
+      }
+   </style>
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+            <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+         </button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg" /></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span
+                     class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+            <div class="row">
+               <div class="col-lg-12">
+                  <h4><i class="fa fa-info-circle"></i> Submission </h4>
+
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-lg-12">
+
+                  <hr>
+                  <p>For submissions to all sections of FERMAT, such as contributions to: articles; comments to
+                     articles; forum; multimedia; news & views; and education, send email to: <a
+                        href="mailto:efermatjournal@gmail.com">efermatjournal@gmail.com</a>, and mention “FERMAT
+                     SUBMISSION” in the
+                     subject line.</p>
+
+                  <p>If the file size exceeds 15MB, send a submission request to <a
+                        href="mailto:efermatjournal@gmail.com">efermatjournal@gmail.com</a></p>
+
+                  <br>
+                  <p>
+                     <strong>Submission Preparation Checklist</strong>
+                  <p>As part of the submission process, authors are required to check off their submission's compliance
+                     with all of the following items, and submissions may be returned to authors that do not adhere to
+                     these guidelines.</p>
+
+                  <ol id="checkList">
+                     <li>The submission has not been previously published, nor is it before another journal for
+                        consideration (or an explanation has been provided in Comments to the Editor).</li>
+
+                     <li>The submission file is in Microsoft Word or LaTex. Where available, URLs for the references
+                        have been provided.</li>
+
+                     <li>If you are submitting an article, please use the IEEE template.
+                         </li>
+
+                     <li>If you are submitting a comment to an article, please identify the article by its Unique
+                        Identification Number.</li>
+
+                     <li>The editors with the help of the editorial board will review your submission and offer any
+                        suggestions for revising your contribution.</li>
+
+                     <li>Once your article has been accepted, you will be required to provide a “print ready” PDF to the
+                        editors, which will then be uploaded to the FERMAT URL.</li>
+                  </ol>
+
+                  <br>
+                  <p><strong>Copyright Notice</strong></p>
+                  <p>All papers published in FERMAT should be cited by mentioning, Author(s), Title, the Date of
+                     publication and the URL from where it can be accessed. "All published Papers are approved for
+                     public release and their distribution is unlimited".</p>
+
+                  <p>Potential contributors to this Open and On-line Journal and Forum can adapt their material and
+                     submit it to other journals, if they wish. However, they are encouraged to check and adhere to the
+                     editorial policies of other journals.</p>
+
+                  <p>As an example, IEEE policy includes the following statement: "If authors have used their own
+                     previously published work(s) as a basis for a new submission, they are required to cite the
+                     previous work(s) and very briefly indicate how the new submission offers substantive novel
+                     contributions beyond those of the previously published work(s)."</p>
+
+                  <br>
+                  <p><strong>Privacy Statement</strong></p>
+                  <p>If you are providing your e-mail address in this journal site, it will be used exclusively for the
+                     stated purposes of this journal and will not be made available for any other purpose or to any
+                     other party.</p>
+               </div>
+            </div>
+         </div>
+
+         <hr>
+      </div>
+      <!-- /#page-content-wrapper -->
+
+   </div>
+   <!-- /#wrapper -->
+   <div id="inc-footer"></div>
+   <!-- jQuery -->
+
+</body>
+
+<script>
+
+   $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+   });
+   $("#menu-toggle-2").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled-2");
+      $('#menu ul').hide();
+   });
+
+   function initMenu() {
+      $('#menu ul').hide();
+      $('#menu ul').children('.current').parent().show();
+      //$('#menu ul:first').show();
+      $('#menu li a').click(
+         function () {
+            var checkElement = $(this).next();
+            if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+               return false;
+            }
+            if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+               $('#menu ul:visible').slideUp('normal');
+               checkElement.slideDown('normal');
+               return false;
+            }
+         }
+      );
+   }
+   $(document).ready(function () {
+      initMenu();
+   });
+</script>
+
+</html>
