@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>
+                    The Demise of the Hundred Year Old Mythology of the Famous Sommerfeld Sign Error Along with a Realization of the Zenneck wave and its relationship with Surface, Lateral and Leaky waves</h3>
+
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Tapan K. Sarkar  and Magdalena Salazar-Palma  </p>
+<p><strong>Source:</strong> FERMAT, Volume 31, Article 1, Jul.-Aug., 2019</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> 
+The famous mythology of the sign error in Sommerfeld formulation is debunked. It is amazing that this misleading information about the sign error has continued for almost a hundred years with researchers stating that there is a sign error in the Sommerfeld formulation but nobody actually was able to show exactly where the sign error occurred. In addition, Sommerfeld never accepted to the sign error myth and also this mythical error was not found even when a group of scientists from AT&T bell labs went through Sommerfelds’s paper with a fine tooth comb. The only person who went through Sommerfeld’s formulation very methodically and categorically stated that there was no error in Sommerfeld’s work was first Wise and Rice whose works were quoted by Stratton in his book. In recent years, Robert Collin also demonstrated that the pole contribution in the Sommerfeld integrals is cancelled by the branch cut contribution and so no surface wave term shows up in the final solution. Then Collin conjectures that the reason for the discrepancy can be use of different approximations for the expansion of the complementary error function. Following Collin’s suggestion it is shown that indeed based on the approximation of the complementary error function one can get a surface wave term or different terms like a lateral wave which is a collection of leaky waves and alternatively the ground wave depending on what type of approximation is made to the Sommerfeld integrals. It is also illustrated that a surface wave does not generally arise in a two media problem with a single boundary layer unless the dielectric permittivity changes sign across the boundary and the imaginary part is much lower than the magnitude of the negative real part. In addition, the history of evolution of the Zenneck wave, the surface wave, the leaky wave and the lateral waves are described. A realization of the Zenneck wave is illustrated for cellular wireless communication using the classical Sommerfeld theory where it may also manifest itself as a lateral wave. Surface waves are generated in a three media problem where a trapped wave is generated in one of the layers. Also clearer demarcation is made between Zenneck waves which are not true surface wave and a surface wave. Finally leaky waves and the lateral waves are described. All these waves are defined based on where the pole of the Green’s function occur on which Riemann sheet and therefore they are function of the chosen branch cut as is illustrated here and hence they do not have a clear crisp definition as to how they are categorized.</p> 
+
+          <p><strong>Index Terms:</strong> 
+            Sommerfeld Sign Error, Zenneck wave, Lateral and Leaky waves</p>			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/articles_fermat/Sarkar-ART-2019-Vol31-Jul.-Aug.-01.pdf" target="_blank">Material Characterization in the Microwave Range, When the Materials Become Composite, Reinforced, 3D-Printed, Artificially Mixed, Nanomaterials and Metamaterials</a> 
+         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
