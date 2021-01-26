@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Evaluating Microwave Diathermy Results Using Robotic Arm Guided Temperature Measurement System </h3>
+		
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Yasuhiro Shindo, Kenji Takahashi, Futoshi Ikuta, Yuya Iseki </p>
+<p><strong>Source:</strong> FERMAT, Volume 22, Article 1, Jul.-Aug., 2017</p>
+				  <hr>
+				 
+					<p><strong>Abstract:</strong> Microwave diathermy is used for thermal rehabilitation to inhibit the early stages of osteoarthritis (OA). Thermal therapy focusing on the deep joint tissue effectively prevents cartilage degradation. However, our previous experimental results using agar phantoms show that microwave diathermy heat penetration depth is less than 20mm, which is not enough to heat the deep tissue for effective treatment of OA.
+
+                        In this study, we evaluated the performance of a microwave diathermy system no different than those used in clinics. To evaluate the system’s performance, we compared temperature increase distributions of our experimental results and our simulated results calculated by the finite element method (FEM).
+                        
+                        First of all, we developed a method using ultrasound (US) imaging techniques to calculate temperature increase distributions inside the human body. To carry out this new method, we understood that the US imaging probe needed to be precisely positioned in order to compare the ultrasound images taken before and after the heating treatments. Because of this, we developed a robotic arm guided imaging system for our experiments.
+                        
+                        Second, we simulated temperature distributions inside the knee using FEM. In order to do this, we utilized a 3D anatomical human knee model reconstructed from MRI images.
+                        
+                        Third, we compared and discussed our experimental results and simulation results.
+                        Our findings confirmed that the microwave diathermy system was not able to heat the deep knee tissue. Furthermore, it can be suggested that our robotic arm guided ultrasound system effectively evaluated temperature increase distributions inside the human body during microwave diathermy treatment.</p>
+
+        <p><strong>Index Terms:</strong> Microwave diathermy, Ultrasound imaging, Robotic arm, Temperature increase distributions, Finite Element Method (FEM)</p>
+			<br>
+        <p><strong>View PDF</strong></p>
+       
+        <a href="https://archive.org/download/articles_fermat/Shindo-ART-2017-Vol22-Jul.-Aug.-01.pdf" target="_blank">Evaluating Microwave Diathermy Results Using Robotic Arm Guided Temperature Measurement System</a> 
+        
+        </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
