@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>On the fundamental bandwidth limits of microwave baluns</h3>		
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong>Andrew J. Mackay</p>
+<p><strong>Source:</strong> FERMAT, Volume 23, Article 1, Sep.-Oct., 2017</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> There has been considerable progress in the construction of fundamental bandwidth limits and near optimal design realisations for several classes of passive linear electromagnetic wave devices, most notably for radar absorbent materials, antennas and meta-materials. This article seeks to place balun design on a similar footing, for an important class of baluns; in particular those which are ‘perfect’ and do not contain magnetically coupled transformers. For this class of baluns, the equivalent circuit is always characterised by a shunt impedance at the output of the device which is inductive in the low frequency limit. Consequently they are governed by one of the Fano [9] limits on bandwidth. The Fano integrated measure of bandwidth is proportional to the shunt inductance and is maximised when the reflection coefficient, at the balanced output port, is minimum reflection phase. Although, in theory, a minimum reflection phase high pass matching network can be shown to provide infinite fractional bandwidth in practice it is not possible to construct such a network at microwave frequencies because the shunt impedance is not purely inductive. At microwave frequencies the shunt impedance is usually realised as a shorted transmission-line section with non-negligible length. This may be approximated by a shunt inductance in parallel with a shunt capacitance over the principal operating range of the balun. This leads to a
+band-pass characteristic and the shunt capacitance gives rise to a second Fano bandwidth measure. It is shown that the use of both measures leads to the characteristic impedance of the transmission line, together with the balanced load impedance, determining the ultimate performance of the balun. This ultimate performance is also achieved if the reflection coefficient, looking from the balanced load into the balun, is minimum reflection phase. Suitable minimum reflection phase designs can be realised using Fano-Rhodes band-pass networks and these equivalent circuits can be compared with realistic designs. An example of such a design is presented for use over 2-18 GHz.
+                         </p>          
+          <p><strong>Index Terms:</strong> microwave, baluns, filters, bandwidth</p>
+
+
+            <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/articles_fermat/Mackay-ART-2017-Vol23-Sep.-Oct.-01.pdf" target="_blank">On the fundamental bandwidth limits of microwave baluns
+         </a>         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
