@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Coupled Analysis of SAR and Temperature Distributions inside the Human Body by 3D FEM Using Improved Cavity Applicator</h3>		
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Yasuhiro Shindo </p>
+<p><strong>Source:</strong> FERMAT, Volume 19, Article 2, Jan.-Feb., 2017</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> This paper discusses coupled analysis of SAR distributions and temperature distributions using an anatomical simulation model reconstructed from 2D medical images. The distributions calculated by 3D FEM using a large resonant cavity applicator for non-invasive deep hyperthermia treatment are presented. This applicator is made for treatment of abdominal tumors.
+                        Some electromagnetic therapeutic devices for hyperthermia treatment have been used in clinics. However, these applicators come with some disadvantages. The abdominal region is covered with fat tissue which is resistant to deep heat penetration. Furthermore, electromagnetic energy concentrates on the convex surfaces of the human body, such as the chests and the buttocks.
+                        In previous studies, it was found that the proposed heating system using the resonant cavity applicator was effective for heating brain tumors and other small objects. However, when heating the abdomen with the developed applicator, areas such as the neck, arm, hip or chest were unintentionally heated. Therefore, the resonant cavity applicator to overcome these problems has been improved.
+                        To evaluate the effectiveness of the proposed methods, coupled analysis of specific absorption rate (SAR) distributions and the changing temperature profiles were conducted. First of all, an anatomical 3D calculation model from 2D medical images was constructed.
+                        Second, the proposed heating system was presented. A cylindrical shield made of an aluminum alloy was installed inside the cavity. It was designed to protect healthy tissue from concentrated electromagnetic fields. Next, in order to concentrate heating energy on deep tumors inside the human body, a water bolus was installed around the body.
+                        Third, the length of the lower inner electrode was adjusted in order to control the heating area. To evaluate the effectiveness of the proposed methods, temperature distributions were calculated by FEM with the 3D anatomical human body model.
+                        From these results, it was confirmed that the improved heating system was able to non-invasively heat abdominal deep tumors.</p>          
+          <p><strong>Index Terms:</strong> SAR, Resonant cavity, Anatomical model, Finite Element Method (FEM).			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/articles_fermat/Shindo-ART-2017-Vol19-Jan._Feb.-002.pdf" target="_blank">Coupled Analysis of SAR and Temperature Distributions inside the Human Body by 3D FEM Using Improved Cavity Applicator</a>         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
