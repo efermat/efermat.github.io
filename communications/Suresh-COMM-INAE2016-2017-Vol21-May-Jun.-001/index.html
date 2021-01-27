@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Engineering Education to meet Industry Expectations</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> BN Suresh </p>
+<p><strong>Source:</strong> FERMAT, Volume 21, Communications 1, May-Jun., 2017</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong>  
+                        There has been continuous efforts to enhance the Industry and academia interactions in the Country but the progress is not yet satisfactory. Industry expectations from academia mainly are a) Having quality human resources with needed skills, good aptitude for team work and basic knowledge of system engineering and b) The academic programmes and curriculum have to stay aligned with their needs as far as possible.
+
+By and large Industries presently meet their human resource requirements by selecting the new entrants based on their attitude and then impart intense training to improve their skills needed for the job. There is a disconnect between the industry needs and the academia curriculum. The graduates from academia lack the capability to identify, formulate and solve engineering problems of products and systems needed by the Industries.
+
+This gap can be substantially improved by introducing the realistic practical orientation to students by having close links with appropriate industrial establishments. It is also essential to design innovative laboratories at institutions to include state-of-the art industrial experiments. The major focus in academia is mostly in improving the knowledge in their area of expertise. They prefer strong research content and attempt to solve the problem by considering the multiple options.
+
+Thus there exists a vast gap between Industry and academia. Industry focus is always production orientation with commercial viability. Their investment in research is very poor. The industry research, if any is need based, mostly application and economic oriented whereas academic research is always open ended, mostly peer reviewed and publication oriented. Therefore it is important to carry out the gap analysis periodically and try to align the curriculum and research to meet the industry needs without affecting the academic requirements. There is a strong need to set up a suitable mechanism to have continuous interaction amongst all stake holders to change the perceptions of research, technology development and production. Introducing the add-on lectures from industry experts on the subject, aligning with curriculum can be another important initiative. Arranging the visit for students in their final years to relevant identified Industries to expose them to practical applications of the subject they study has to be seriously considered.
+
+Other important initiatives have to be to utilize the expertise of academia for Industry, to allow faculty members to come on sabbatical at Industrial establishments relevant to their area of expertise. Also establish a research wing in the Industry with enhanced funding and involve academic experts. One of the important initiatives is to set-up the Industry parks near the academic Institutions. Similar exercises have been done already by a few Institutions and they are yielding the desired results.</p>         
+                         <p><strong>Index Terms:</strong> Engineering education, industry expectations from graduates, industry-academic partnership
+                         </p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Suresh-COMM-INAE2016-2017-Vol21-May-Jun.-001.pdf" target="_blank">Engineering Education to meet Industry Expectations
+        </a> 
+         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
