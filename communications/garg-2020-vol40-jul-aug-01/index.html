@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Ground plane assisted Miniaturization of Multiband and Wideband printed Monopole Antennas</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong>Prashant Garg </p>
+<p><strong>Source:</strong>FERMAT, Volume 40, Communication 1, July.-Aug., 2020</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong>   In the presented research, various aspects of miniaturization have been investigated to design compact antenna solutions for specific operating environments, and a better understanding of design optimization and their prospects developed. For multiband operation in the low and mid-frequency spectrum covering LTE and other protocols, ground plane curvature is utilized to achieve lowering of the narrowband frequency to 630 MHz in the proposed annular split ring monopole antenna. Its wideband impedance match characteristics (2 - 4.23 GHz) are seen to remain relatively unaffected by variation of band-rejection locations over its bandwidth. Despite being designed in low permittivity, thin substrate (εr = 2.2, 1/16th inch), at 48 × 44 mm2 , the antenna has the most compact size reported so far for the narrowband coverage provided. For wideband coverage of nearly all FDD and TDD LTE bands, ground plane based feed gap variations have been found critical in obtaining the ultra-wide bandwidth (0.7 – 3.4 GHz) and securing stability in its lower and upper edge cut-off frequencies. Constructed in ‘long-board’ configuration with dimensions of 105 × 40 mm2 on 1/16th inch thick FR4 laminate (εr = 4.4), its higher radiation resistance maintains higher cross-polar levels and efficiency throughout its bandwidth. 
+                        A systematic design approach harnessing miniaturization potential of stepped impedance resonator theory is applied to the development of a dual-resonant high frequency wideband antenna, where transmission line modelling has been found to hold well beyond ground plane edges. Further, fine tuning of impedance match characteristics between resonances by ground plane based stubs were found to reduce reflection and render the compact antenna (35 × 30 mm2 , εr = 2.2) operational over nearly an ultrawide bandwidth (3.2 – 11 GHz), which nearly covers the entire FCC UWB spectrum. 
+                        Finally, a more comprehensive take towards miniaturization is offered through a topology alteration that seeks to improve both miniaturization and radiation performance of antennas. The ‘stripline-fed superstrate’ topology, results in a ‘sandwich’ type structure of the antenna with a stripline feed. An 11% downshift in dominant resonance frequency for a strip monopole as compared to its microstrip counterpart, and higher cross polar levels are seen resulting from better dielectric homogenization and superstrate cover effects that the topology provides. Further, width-wise direct downscaling of the previously discussed low frequency rectangular disc wideband antenna to this topology has found it retaining its original wideband and radiation characteristics, but with a 37.5 % reduction in surface area. This observed direct adaptation of existing designs seems to hold future promises of its wider application. The work in this presentation may thus help antenna designers expand their scope of options, or perspective of approach, for confronting miniaturization issues of printed monopole antennas. </p>                              
+          <p><strong>Index Terms:</strong>monopole antennas, miniaturization, ground-plane based, low frequency, LTE, bandwidth enhancement, multiband, wideband, ultra wideband, tunable band-rejection, transmission line theory, stepped impedance resonator, design topology, stripline-fed superstrate,</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Garg-2020-Vol40-Jul.-Aug.-01.pdf" target="_blank">Ground plane assisted Miniaturization of Multiband and Wideband printed Monopole Antennas</a>         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
