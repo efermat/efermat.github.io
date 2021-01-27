@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Teaching Electromagnetic Waves in Effective and Enjoyable Fashion</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong>  Raghunath K Shevgaonkar </p>
+<p><strong>Source:</strong> FERMAT, Volume 21, Communications 4, May-Jun., 2017
+</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong>  
+                        Today there is hardly any electrical gadget around us in which principles of electromagnetism are not used. Electromagnetics therefore is a core subject in electrical engineering in almost all the institutes across the world. The course is generally taught at sophomore or junior level. In spite of its importance in foundation of electrical engineering, the students invariably take the subject as a burden and therefore develop dislike for it. What is the reason for this dislike? Here we investigate some of the aspects of the subject and its development to make the teaching-learning process effective and enjoyable.
+
+A course is liked by the students when it meets some or all the criteria like, (1) inherent interest in the course, (2) skills of the students match with that required by the course (3) the course finds wide applications in contemporary sense (4) the course is high scoring in exams (5) the course enhances employability (6) the course is taught in an inspiring manner etc. It is the responsibility of the teacher to make the electromagnetics course qualify on these criteria. It is important that a teacher builds positive bias about the course among the students and kindles their curiosity in the subject.
+
+Electromagnetics is a subject founded on the experimental laws that have been captured with vector calculus. It has been observed however, that invariably the physical concept of the subject is not well presented by a teacher and the course reduces to mere manipulation of equations. In absence of proper understanding of the physics behind the equations the students develop dislike for the subject. Today with excellent computing facilities, the physical aspect of electromagnetics can be demonstrated very effectively by simulations and numerical modelling. A visual representation of the EM phenomenon then not only makes the subject interesting but also creates a long lasting impression on the students’ minds. Also showing the applications of the concepts in the systems in our day to day life like, electrical machines, telephone lines, microwave ovens, radio and TV, satellite, fibre optic and mobile communication etc., make the subject exciting and relevant for the students.
+
+
+In electrical engineering curriculum, students develop a good understanding of electrical circuits and circuital laws that deal with voltages and currents. A sudden exposure of the time varying electric and magnetic fields that is dealt with in electromagnetics, creates a disconnect between the circuit theory and the field theory. The circuit theory deals with scalar quantities in frequency and time, whereas the field theory deals with vector quantities in frequency, time and space. To reduce the disconnect, the ‘space’ can be brought in circuit analysis through the introduction of transmission lines. If transmission lines are taught before the time varying fields, the abrupt change from the circuit theory to the field theory is reduced and the circuit theory appears as a limiting case of the field theory. The transmission line still deals with the scalar quantities like voltage and current, but develops concepts of EM waves in one dimension. Extension of the concepts in three dimension with vector fields, then becomes more manageable for the students.
+
+It has been observed from the students’ feedback that, a logical development of electromagnetics supported by relevant mathematics (in that order) makes the subject more enjoyable for the students. It is also observed that a proper examination system that tests the conceptual understanding of the subject rather than just her/his algebraic manipulation skills, plays an important role in enhancing students’ involvement in the course.
+
+In an electrical engineering curriculum, electromagnetics is a subject that has maximum number of concepts relative to any other subject. It is therefore important that this conceptual nature of the subject is highlighted with due analytical skills while conduct of the course.
+</p>         
+                         <p><strong>Index Terms:</strong>  Teaching electromagnetics, effective teaching, enjoying electromagnetics
+
+                         </p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Shevgaonkar-COMM-INAE2016-2017-Vol21-May-Jun.-004.pdf" target="_blank">Teaching Electromagnetic Waves in Effective and Enjoyable Fashion
+         </a> 
+         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
