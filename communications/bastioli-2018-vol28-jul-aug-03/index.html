@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3><!--heading-->Nonresonating Modes Do it Better! </h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong><!--author--> Dr. Simone Bastioli</p>
+<p><strong>Source:</strong><!--source--> FERMAT, Volume 28, Communication 3, Jul.-Aug., 2018</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> The innovative concept of nonresonating modes and how this has been recently exploited to extend the performance and capabilities of the state-of-art of microwave filter technology will be presented in this talk. Although the concept is presented by mostly focusing on filters, as these are the components where this new technique has found large application over the past few years, all general features are explained and illustrated in detail thus potentially paving the way for new applications involving other passive microwave components. After a brief discussion highlighting the importance of microwave filters from a system perspective, the main concept of the talk will be introduced by defining what is a nonresonating mode and by illustrating what are the benefits of this approach. The concept is then gradually explained by using some waveguide as well as planar SIW examples, as the rectangular waveguide technology is where these modes were first observed; most importantly, these examples have been proved to considerably ease the understanding of the concepts from both students and non-experts perspectives. The general multimode environment of these structures is described step-by-step and several animations are introduced during the explanation thus really allowing the audience to absorb the more general multimode concept that otherwise often remain an obscure myth for many microwave engineers. The presentation is then extended to the most various filter technologies, such as conventional coaxial structures, dielectric resonators based architectures, as well as more original mixed technologies. Several manufacturing examples of actual products developed at RS Microwave (Dr Bastioli‘s affiliation) are going to be presented along this talk, thus also satisfying the more practical taste of an industry audience. <!--abstract--></p> 
+                    <p><strong>Index Terms:</strong> waveguide, SIW, Filter<!--index terms--></p>			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Bastioli-2018-Vol28-Jul.-Aug.-03.pdf" target="_blank"><!--heading-->Nonresonating Modes Do it Better!</a>  //link       
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
