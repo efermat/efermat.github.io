@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Reddy-Comm-2017-Vol20-Mar._Apr.-010 Parallel Computational Approach to Gradient Based EM.........</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Gongal Reddy Venu Madhav Reddy </p>
+<p><strong>Source:</strong>  FERMAT, Volume 20, Communication 10, Mar-Apr., 2017</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> Electromagnetic (EM) based optimization and design closure is an essential part of RF and microwave design cycle. The main objective of this thesis is to develop a new gradient based EM optimization technique which exploits parallel computations. The proposed EM optimization technique achieves speed up in the optimization process even if a coarse model is not available. Speed up in optimization has been achieved by using large and effective optimization updates in each iteration which resulted in fewer optimization iterations. The first contribution of the thesis is the development of a trust-region based optimization technique which uses parallel computational approach. In the proposed method, we deliberately increase the number of fine model evaluations without increasing the computation time by using a parallel computational approach. A large number of fine model evaluations allows us to build a surrogate model valid in a large neighborhood. These valid surrogate models are used to achieve large and effective optimization updates. The second major contribution of the thesis is the EM optimization decomposition approach to address the challenges in EM optimization with many design variables. This proposed method decomposes a single large EM optimization problem into multiple smaller sub-optimizations to improve the optimization efficiency. Multiple sub-optimizations are formulated to be independent so that the parallel computations can be exploited to evaluate concurrent sub-optimization updates. The resultant vector, a combined vector of sub-optimization updates, will be closer to the optimal solution. Furthermore, the optimization update of the proposed approach is much larger in comparison with the optimization update without decomposition. </p>         
+                  <p><strong>Keywords:</strong> Decomposition, electromagnetic (EM) optimization, gradient optimization, microwave filter, parallel, sub-optimization, surrogate model, trust region.</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Reddy-Comm-2017-Vol20-Mar._Apr.-010%20Parallel%20Computational%20Approach%20to%20Gradient%20Based%20EM..........pdf" target="_blank">Reddy-Comm-2017-Vol20-Mar._Apr.-010 Parallel Computational Approach to Gradient Based EM.........</a> 
+         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
