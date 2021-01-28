@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Validation of generalized equivalent circuit's modeling: Shielding Application</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong>Ahmed Nouainia, Mohamed Hajji, Taoufi Aguili</p>
+<p><strong>Source:</strong>FERMAT, Volume 22, Communication 2, Jul.-Aug., 2017</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong>  The electromagnetic analysis of planar circuits at high frequencies is based on several numerical modeling methods. Among those, method of generalized equivalent circuit (MGEC) is well adapted for studying planar circuits due to their multiple advantageous. However, when the studied structure complexity increases, it attains rapidly its limitation in terms of requirements (computational time and memory storage). It can be affected also by badly scaled matrices problem that constitutes a huge problem for all numerical methods. In this work, we are interested in optimizing the basic parameters of the MGEC method in order to avoid the considered previous problems. In fact, according the possible cases of excitation source and test function, we can obtain four possible configurations of (GEC) that can model an electromagnetic problem. Our aim is to compare between these configurations in terms of accuracy and needed time to reach convergence, and then determine the well GEC. This validated by applying the MGEC to study shielding. Primary results show that there are two unsuitable GEC configurations which are affected by numerical problems and the two others (classic GEC) are adequate. Thus, we had been interesting in avoiding these problems and remedy the two unsuitable configurations. This challenge is guaranteed by introducing the wave concept as excitation source to get a possible electromagnetic solution.</p>                              
+          <p><strong>Index Terms:</strong>Generalized Equivalent Circuit, electromagnetic problem, wave concept, shielding </p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Nouainia-COMM-RF2017-2017-Vol22-Jul.-Aug.-002.pdf" target="_blank">Validation of generalized equivalent circuit's modeling: Shielding Application </a>         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>

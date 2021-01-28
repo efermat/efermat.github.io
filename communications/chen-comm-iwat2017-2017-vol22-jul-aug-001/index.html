@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Cellular Wireless Energy Harvesting for Powering Wearable Sensors</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong>Ray Chen, Ben Milligan, Tony Qu, George Shaker and Safieddin Safavi-Naeini</p>
+<p><strong>Source:</strong>FERMAT, Volume 22, Communication 1, Jul.-Aug., 2017</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong>  Our generation has witnessed a surge of wearables for healthcare and fitness applications. However, real estate availability is very limited in most wearable gadgets; it is very challenging to shrink the size of the wearable device while maintaining the required space for the analog/power/RF circuits, sensors, antenna, and battery. The later typically occupies a significant space, and it has become highly desirable to completely forgo battery-based designs in favor of ones that employ a reliable mechanism of energy harvesting.In this talk, we discuss different aspects of realizing a smart contact lens as an example of a wearable wireless sensor enabled through the utilization of electromagnetic energy harvesting. Very recently, the potential of using a smart contact lens to monitor multiple diseases through sensing various biomarkers in the tear fluid have been explored. Most notable attempts proposed utilizing near field communication (NFC) technologies to enable the operation of the smart contact lenses. This in turn necessitated that the contact lens wearer would have another device to wear close to the eye to enable the NFC operation, which is not a practical implementation to many potential users.Alternatively, and since the habit of having a cellular phone on a person has become an intrinsic part of our daily routine, we envisioned a different energy harvesting mechanism that makes use of how ubiquitous smartphones have become. Most recently, we demonstrated the potential of harvesting ambient electromagnetic energy radiated from a nearby cell phone whether during a call or during a data session to continuously power the sensors and electronics on a contact lens for non-invasive monitoring of glucose levels in the tear fluid.It is a fact that most smartphones emit between 20dBm to 33dBm, depending on how good their antenna designs are, their band of operation, and whether they are in a data burst or a voice call, and. Our electromagnetic energy harvesting system on the contact lens relies on rectifying a portion of a cell phone/smartphone-emitted uplink signal into DC power for the operations of on-lens sensors and components. For development purposes, an actual cow eye is used to assist in various measurements of the proposed energy harvester. Ultimately, a minimum power of 1mW at about 1V is harvested and delivered to a resistive load of 2KOhm when a cell phone is held in a typical reading position. This harvested power level is more than adequate to enable numerous possible on-body sensors.We will also describe in this talk how our system employs signals emitted from smartphones to facilitate the backscatter of the sensor-modulated electromagnetic waves allowing Bluetooth-enabled smartphones to display in real-time the sensor data collected on-board of the smart contact lens.</p>                              
+          <p><strong>Index Terms:</strong>Smart Contact Lenses, wearable electronics, Bio-sensors, bio-telemetry, personalized assistive smartphones</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Chen-COMM-IWAT2017-2017-Vol22-Jul.-Aug.-001.pdf" target="_blank">Cellular Wireless Energy Harvesting for Powering Wearable Sensors</a>         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
