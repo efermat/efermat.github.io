@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Flexible, Wearable, Disposable Wireless Communication And Sensing Systems Through Additive Manufacturing</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Atif Shamim </p>
+<p><strong>Source:</strong> FERMAT, Volume 31, Communication 3, Jan.-Feb., 2019</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong>  
+                        With the advent of wearable sensors and internet of things (IoT), there is a new focus on electronics which can be bent so that they can be worn or mounted on non-planar objects. Due to large volume (billions of devices), there is a requirement that the cost is extremely low, to the extent that they become disposable. The flexible and low-cost aspects can be addressed through additive manufacturing technologies such as inkjet, screen and 3D printing. This talk introduces additive manufacturing as an emerging technique to realize low cost, flexible and wearable wireless communication and sensing systems. The ability to print electronics on unconventional mediums such as plastics, papers, and textiles has opened up a plethora of new applications. In this talk, various innovative antenna and sensor designs will be shown which have been realized through additive manufacturing. A multilayer process will be presented where dielectrics are also printed in addition to the metallic parts, thus demonstrating fully printed components. Many new functional inks and their use in tunable and reconfigurable components will be shown. In the end, many system level examples of wireless sensing applications will be shown. The promising results of these designs indicate that the day when electronics can be printed like newspapers and magazines through roll-to-roll and reel-to-reel printing is not far away.</p>         
+                         <p><strong>Index Terms:</strong>  IoT, SoC, Lens, Flexible antenna, 3D-printing, Wireless Sensing System, Additive Manufacturing</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Shamim-2019-Vol31-Jan.-Feb.-03.pdf" target="_blank">Flexible, Wearable, Disposable Wireless Communication And Sensing Systems Through Additive Manufacturing</a> 
+         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
