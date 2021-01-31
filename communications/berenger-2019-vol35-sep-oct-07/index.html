@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Comparison of Luebbers and Maloney implementations of complex objects composed with thin layers in the FDTD grid</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Afnan Alkandari, Fumie Costen, Jean-Pierre Bérenger,  Ryutaro Himeno, Hideo Yokota </p>
+		       <p><strong>Source:</strong> FERMAT, Volume 35, Communication 7, Sep.-Oct., 2019</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong>The Maloney [1] and Luebbers [2] subcell methods can be used to implement dielectric or conducting sheets thinner than the cell
+                    size in the FDTD grid. The two methods differ in the treatment of the field components situated half a cell from the thin sheet. For a sheet of infinite size
+                    stricken by an incident plane wave, it has been shown by theory and experiments that the Luebbers method suffers from discrepancy at the wide incidence angle,
+                    while the Maloney method is exact at any incidence angle [3]. The comparison of Maloney and Luebbers methods has been later extended to dispersive sheets, 
+                    more specifically, sheets made with the Debye media used in Bio-electromagnetism to model the Human Body tissues (A. Alkandari et al, AP-S/USNC-URSI 
+                    Symposium, FR-UB.5P, Boston, 2018).</p>             
+ 
+                    <p>This paper presents the further comparison of the two aforesaid methods in more realistic situations with objects of finite size composed of several 
+                    thin sheets such as dielectric, conducting or Debye medium sheets. Comparisons with objects composed with both PEC surfaces and thin sheets are also 
+                    presented. The results from numerical experiments show that the difference between the Luebbers and Maloney methods is affected by the problem to be solved, 
+                    especially the geometry and size of the thin sheets, the physical parameters of the sheets (permittivity, conductivity, relaxation time), and such other
+                    parameters as the location of the observation, for instance, inside or outside an enclosure. The interest of using the Maloney method, which is accurate in 
+                    any situation, but is more complex to implement in a general purpose computer code, is discussed, with a special emphasize on the case of sheets made with 
+                    Human Body media.   </p>
+          <p><strong>Index Terms:</strong> FDTD, Subcell method, Debye media, Human Body </p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Berenger-2019-Vol35-Sep.-Oct.-07.pdf" target="_blank">Comparison of Luebbers and Maloney implementations of complex objects composed with thin layers in the FDTD grid
+       </a>         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
