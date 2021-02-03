@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Performance Enhancement of Microwave
+                  Sub-wavelength Imaging and DOA Estimation
+                  by Using Signal Processing Techniques</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Xiang Gu , Raj Mittra ,Chiara Pelletti , Sidharath Jain , Weibo Wang , and Yunhua Zhang 
+    </p>
+<p><strong>Source:</strong> FERMAT, Volume 10, Article 3, Jul Aug., 2015</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> —In this work, we show how we can improve
+                     the image resolution capabilities of a Phase Conjugating
+                     (PC) lens as well as the angular resolution of Luneburg
+                     lens antennas, aperture antennas, and the Randomly
+                     Distributed Radar Array (RDRA), by employing signal
+                     processing techniques, such as the Correlation Method
+                     (CM), the Minimum Residual Power Search Method
+                     (MRPSM), the sparse reconstruction method, and the
+                     Singular-Value-Decomposition (SVD)-based basis matrix
+                     method. In the first part, we apply these techniques for
+                     sub-wavelength imaging in the microwave regime by
+                     combining them with the well-known phase conjugation
+                     principle. We begin by considering a one-dimensional
+                     microwave sub-wavelength imaging problem handled by
+                     using three signal processing methods, and then we move
+                     on to two- or three-dimensional problems by using the
+                     SVD-based basis matrix method. Numerical simulation
+                     results show that we can enhance the resolution
+                     significantly by using these methods, even if the
+                     measurement plane is not located in the very near-field
+                     region of the source. We describe these proposed
+                     algorithms in detail and study their abilities to resolve at
+                     the sub-wavelength level. Next, we investigate the sparse
+                     reconstruction method for a normal Luneburg lens
+                     antenna and the Correlation Method and the SVD-based
+                     basis matrix method for a flat-base Luneburg lens
+                     antenna to estimate the Direction-of-Arrival (DOA).
+                     Numerical simulation results show that the signal
+                     processing techniques are capable of enhancing the
+                     angular resolution of the Luneburg lens antenna, enabling
+                     the lens to locate multiple targets with different scattering
+                     cross-sections, and achieving higher angular resolution.
+                     Finally, we present a hybrid approach which combines
+                     the Correlation Method and the SVD-based basis matrix
+                     method to achieve considerably higher angular resolution
+                     when using two representative aperture antennas, e.g. a
+                     parabolic reflector, a random array, to estimate the DOA.
+                     Numerical results show that the proposed hybrid
+                     approach can help achieve a higher angular resolution
+                     than that without the use of signal processing.</p>
+                              
+          <p><strong>Index Terms:</strong>Phase Conjugating (PC), Direction of
+            Arrival (DOA), Randomly Distributed Radar Array
+            (RDRA), Correlation Method (CM), Minimum Residual
+            Power Search Method (MRPSM), Singular Value
+            Decomposition (SVD).</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/articles_fermat/Gu-ART-2015-Vol10-Jul_Aug-003.pdf" target="_blank">Performance Enhancement of Microwave
+            Sub-wavelength Imaging and DOA Estimation
+            by Using Signal Processing Techniques</a>
+		 </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
