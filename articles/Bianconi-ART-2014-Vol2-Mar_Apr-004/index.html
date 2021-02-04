@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3> Efficient Analysis of Microwave
+                  Circuits/Printed Antennas and Scattering
+                  Problems via the Characteristic Basis Function
+                  Method (CBFM) </h3>
+		
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Giacomo Bianconi and Raj Mittra  </p>
+<p><strong>Source:</strong> FERMAT, Volume 2, Article 4, Mar.-Apr., 2014</p>
+				  <hr>
+				 
+					<p><strong>Abstract:</strong> In this paper we present an efficient
+                  numerical technique, called the Characteristic Basis
+                  Function Method (CBFM), for the electromagnetic
+                  analysis of planar microstrip structures as well as for a
+                  class of three-dimensional scattering problems. In this
+                  method, the original problem geometry is segmented into
+                  smaller regions called blocks, and high-level basis
+                  functions are generated to represent the electromagnetic
+                  characteristics of these sections. These basis functions are
+                  referred to as the Characteristic Basis Functions (CBFs),
+                  and their use leads to a reduced matrix equation system.
+                  Since the method only requires the solution of relatively
+                  small-size matrix equation, both in the process of
+                  generating the CBFs and in the solution of the reduced
+                  matrix, the overall computational burden is reduced in
+                  terms of the memory requirement relative to the
+                  conventional Method of Moments (MoM) approach, and
+                  an acceleration of the solve time is also achieved. The
+                  Characteristic Basis Function Method is next combined
+                  with the Equivalent Medium Approach (EMA) for fast
+                  and efficient design of microstrip circuits etched on
+                  layered media. In particular, the developed EMA method
+                  substitutes the stratified environment with an equivalent
+                  “homogeneous” medium whose Dyadic Green's
+                  Functions (DGF's) can be evaluated analytically. The
+                  above technique yields reliable results and reduces the
+                  computational time in comparison with the conventional
+                  Method of Moments. In the second part of the paper, the
+                  CBFM will be applied to the solution of electromagnetic
+                  scattering problems involving plasmonic nano-rod array
+                  antennas operating in the Terahertz regime. In
+                  particular, the formulation necessary for the analysis of a
+                  single nano-rod is introduced and subsequently
+                  generalized to the case of a double-periodic array and to
+                  the case of a finite randomly tilted array. Several
+                  numerical examples which demonstrate the accuracy and
+                  the efficiency of the described procedures are included,
+                  both for the case of microstrip structures as well as for
+                  the nano-rod antennas. </p>
+          
+          <p><strong>Index Terms:</strong> Method of Moments (MoM),
+            Characteristic Basis Function Method (CBFM), Dyadic
+            Green's Function (DGF's). </p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/articles_fermat/Bianconi-ART-2014-Vol2-Mar_Apr-004.pdf" target="_blank"> Efficient Analysis of Microwave
+            Circuits/Printed Antennas and Scattering
+            Problems via the Characteristic Basis Function
+            Method (CBFM) </a> 
+         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
