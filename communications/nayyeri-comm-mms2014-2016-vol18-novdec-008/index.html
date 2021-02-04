@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Electromagnetics Simulation of
+Graphene</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Vahid Nayyeri and Omar M. Ramahi</p>
+		       <p><strong>Source:</strong> FERMAT, Volume 18, Communication 7, Dec , 2016</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> Graphene is a planar monoatomic layer of carbon bonded in a hexagonal structure. Recently, graphene has gained significant interest due to its potential in enabling new technologies and addressing key technological challenges. Numerous applications of graphene in a wide spectral range (from microwave to X-rays) have recognized it as a versatile material and an enabling technology. In many of these applications, electromagnetic (EM) properties of graphene are of interest. The EM properties of graphene and its related applications can be understood by means of EM simulation of graphene. Graphene layer is extremely thin physically and also extremely thin electrically (the layer is one atom thick). This means that the thickness of a graphene layer is orders of magnitude smaller than the electromagnetic wavelengths. This feature makes modeling graphene distinctly challenging. Several works have recently been published on EM modeling of graphene. Some of them used commercial CAD software packages for this purpose and propose techniques which can be used to adapt CAD software to the special feature of graphene. The other works propose methods for modeling graphene by means of computational electromagnetics methods such as finite-difference time-domain method, method of moment, etc. Comparing these two methodologies, the former is easier to use but the latter is more efficient. In this tutorial, we will: 1) introduce the EM properties of graphene, 2) review the methods used for EM modeling of graphene, and 3) facilitate a discussion on the effectiveness, advantages and disadvantages of the numerical methods available to model graphene. We will also discuss application of commercial software packages for EM simulation of graphene.</p>
+          <p><strong>Index Terms:</strong> computational electromagnetics, graphene, thin conductive layers</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Nayyeri-COMM-MMS2014-2016-Vol18-Nov._Dec.-008.pdf" target="_blank">Electromagnetics Simulation of
+Graphene
+        </a>         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
