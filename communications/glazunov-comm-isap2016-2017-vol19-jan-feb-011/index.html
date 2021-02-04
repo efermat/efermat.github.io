@@ -1,0 +1,121 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3><!--heading-->Design and characterization of cost effective planar antennas with steerable beams: Gap waveguides, SMT and Random-LOS (Part II) </h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> <!--author--> Andrés Alayón Glazunov </p>
+<p><strong>Source:</strong><!--source--> FERMAT, Volume 19, Communication 11, Jan-Feb., 2017
+</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> In order to characterize the OTA (Over-The-Air) system performance of wireless devices, such as smart phones or base stations, we need to consider various factors. For example, the type of propagation channel in which they are expected to operate, the type of communications standard, system parameters (e.g., coding and modulation), the frequencies and bandwidths of operation, the number of transmit/receive antennas, as well as the actual transmit/receive algorithms used to produce single or multiple data bit streams.
+
+Knowing the most representative propagation channel behavior for your specific application is not a minor undertaking. For handheld devices and small base stations it was early shown that the spatial behavior of the impinging waves at these devices could be approximated by the so- called RIMP (Rich Isotropic MultiPath) environment. If properly designed, a reverberation chamber can be used to emulate the RIMP channel with high accuracy. It has been shown that antenna diversity and MIMO performance can be determined for multi-port arrays in reverberation chambers, with well-defined diversity gains. The standard deviation of the measurement errors obtained in RIMP is typically within 0.5 dB or smaller. At higher frequencies, e.g., up to 30, 60 GHz or higher the multipath waves (i.e., the RIMP contribution to the total receive signal fluctuation) will be weaker as compared to the direct line-of-sight (LOS) wave. The LOS component behaves randomly in real life. This randomness appears due to the randomness induced by the orientation and/or position of the wireless device, often at the user end. Hence, in addition to the well-known RIMP propagation channel, the Random-LOS environment is proposed as a new complementing reference propagation scenario. The RIMP and the Random-LOS provide two idealized yet well-defined edge propagation channels for this purpose. While the RIMP can be emulated in reverberation chambers, the Random-LOS is emulated in anechoic or rather in semi-anechoic chambers.
+
+In OTA characterization of active and passive devices, system related parameters are often fixed by the standards. Therefore, good system models are needed. The ideal threshold receiver model devised in has been shown to work well for current LTE/LTE-A and WiFi communications standards. The model makes it easy to incorporate system specific parameters and receive/transmit algorithms over the whole bandwidth of operation of the device as well as the use of multiple antennas at both ends of the communication link. The probability of detection (PoD) of single or multiple bit streams is used as a measure of system performance in terms of relative data bit stream throughput. Excellent agreement has been achieved between theory and experiment. In 5G systems, both the RIMP and the LOS propagation channels provide favorable propagation conditions for communications systems employing massive MIMO array antennas. The development, testing and characterization of new wireless technologies will heavily depend on OTA techniques. Especially, given the practical constraints by the huge number of antenna elements and the lack of a testing port at the mm-waves frequencies.
+
+The combination of the ideal threshold receiver model with the two limiting environments RIMP and Random-LOS are linked together by a real-life hypothesis: “If a wireless device is tested with good performance in both pure-LOS and RIMP environments, it will also perform well in real-life environments and situations, in a statistical sense”.<!--abstract--> 
+</p> 
+                    <p><strong>Index Terms:</strong> 5G, Over-The-Air (OTA) characterization, active and passive OTA measurements, Random Line-Of-Sight (Random-LOS), Rich Isotropic Multipath (RIMP), system performance, array antenna, wireless device, automotive.<!--index terms--></p>			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Glazunov-COMM-ISAP2016-2017-Vol19-Jan.-Feb.-011.pdf" target="_blank"><!--heading-->Design and characterization of cost effective planar antennas with steerable beams: Gap waveguides, SMT and Random-LOS (Part II)</a>       
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>

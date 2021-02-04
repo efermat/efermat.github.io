@@ -1,0 +1,116 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3><!--heading-->New Method for Generating Orbital Angular Momentum Vortex Beams in the Radio Frequency Domain </h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong>Shixing Yu and Long Li <!--author--> </p>
+<p><strong>Source:</strong> FERMAT, Volume 19, Communication 13, Jan-Feb., 2017
+<!--source--> 
+</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> Orbital Angular Momentum (OAM) has drawn great attention of worldwide academia in the recent years. It has been intensively applied in the domains of optics. Recent studies imply that OAM vortex wave can be used in radio not only limited to optics. Then, the application of OAM in radio has gradually become a research hotspot, and developing effective antennas to produce OAM beams is one of the key issues. To date, there are several methods to generate OAM beams, such as spiral phase plate, holographic diffraction gratings, spiral reflectors, and antenna arrays. Among them, the first two methods come from the optics and mainly going to be used in high frequency like millimeter wave. The latter two types mainly targets the low frequency. However, the spiral reflectors in many cases, due to its specifically curved surface, is difficult to manufacture. On the other hand, the array antenna, when equipped with controllable phase shifters, can achieve different functionalities electronically, but generally becomes very expensive due to its complicated beam-former and many high-cost amplifier modules. Here, we present a new method for the generation of an electromagnetic vortex wave by reflective metasurface in radio frequency. It can easily avoided transmission loss, and has the flexibility in phase control. The proposed method paves a new way to generate the OAM vortex waves for radio and microwave wireless communication applications.<!--abstract--> 
+</p> 
+                    <p><strong>Index Terms:</strong> Orbital Angular Momentum (OAM), reflective metasurfaces, vortex waves, radio and microwave wireless communications<!--index terms--></p>			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Yu-COMM-PIERS2016-2017-Vol19-Jan.-Feb.-013.pdf" target="_blank"><!--heading-->New Method for Generating Orbital Angular Momentum Vortex Beams in the Radio Frequency Domain</a>       
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>

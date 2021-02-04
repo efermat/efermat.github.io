@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Discovery and History of the Electron</h3>
+		
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong>Dr. D. V. Giri</p>
+<p><strong>Source:</strong>FERMAT, Volume 24, Communication 8, Nov.-Dec., 2017</p>
+				  <hr>
+				 
+					<p><strong>Abstract:</strong>The electron was the first elementary particle to be discovered. We know its observed mass, its charge, its angular momentum and we assume that it has infinite lifetime. For more than a century no consensus has been reached over the equation of motion for a radiating electron and the standard model would have us believe that the electron is a point particle. We briefly consider the history of the equation of motion of the electron and point to the reason for the failure of what was considered to be the correct result of classical physics. Furthermore, a given mass has an event horizon, and any mass approaching a point would lie within and so be a black hole, which would rapidly disappear via Hawking radiation. Because a point particle with mass cannot spin, it has been declared that the electron angular momentum is “a purely quantum mechanical effect”. The prediction of zitterbewgung (trembling motion in German) by Schrödinger offered a partial solution, in that it suggested that the angular momentum was due to circular motion around a point, but still left the problem of a massive particle (the electron) travelling at c, the speed of light. We have the rules for accelerating electrons to exist in stationary states, but no explanation as to why they do not radiate. It was known from the beginning that the electron must have mechanical mass. Unable to separate this mass it was assumed to be 'pushed into a non-observable realm'. Despite these problems and lack of explanations, Quantum Electro Dynamics (QED) continues to produce the most accurate predictions ever produced by theory.
+
+We also consider a complex combination of charge and mass which leads to the consideration of possible 5th force and a new particle, which we call the ilectron. The ilectron has derived properties that make it a contender as a WIMP.</p>
+          
+          <p><strong>Index Terms:</strong>electron, ilectron</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Giri-COMM-ASIAEM2017-2017-Vol24-Nov.-Dec.-08.pdf" target="_blank">Discovery and History of the Electron</a> 
+         
+         </div>	
+			</div>
+         </div>		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
