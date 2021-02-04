@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h4>Volumetric Method of Moments (V-MoM) in
+                    Modelling Nanotopologies: A Review </h4>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> X. Zheng, V. K. Valev, N. Verellen, V. Volskiy, P. Van Dorpe, G. A. E.Vandenbosch and V. V. Moshchalkov  </p>
+<p><strong>Source:</strong> FERMAT, Volume 4, Article 4, Jul-Aug., 2014</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> This paper provides a summary review of our
+                        group’s work on the modeling of nanoantennas. By utilizing a
+                        Volumetric Method of Moments (V-MoM) algorithm, we
+                        solve the light-nanoantenna problem on three different levels:
+                        I) the most general solution to Maxwell’s equations, i.e. the
+                        linear response of a nanoantenna to a given incident light and
+                        a specific frequency; II) an incident light independent solution,
+                        i.e. the frequency dependent eigenmodes of a nanoantenna
+                        and III) an solution that is both excitation and frequency
+                        independent, i.e. the natural mode of a nanoantenna. Through
+                        such a treatment, a set of tools that can systematically treat the
+                        interaction of light with a nanoantenna is developed and is
+                        hoped to pave the road for the future nanoantenna design. 
+                         </p>
+                              
+          <p><strong>Index Terms:</strong> Nanoantennas, Volumetric Method of
+            Moments (V-MoM), Eigenmode Expansion Method (EEM),
+            Natural Frequency Analysis. 
+            
+          </p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/articles_fermat/Zheng-ART-2014-Vol4-Jul_Aug-004.pdf" target="_blank">Volumetric Method of Moments (V-MoM) in
+            Modelling Nanotopologies: A Review
+           </a>
+		 </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
