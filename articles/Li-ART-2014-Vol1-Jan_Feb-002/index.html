@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>A Survey of Planar Ultra-Wideband Antenna Designs and Their Applications </h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong>  Yingsong Li    , Wenxing Li    , Qiubo Ye     and Raj Mittra     </p>
+<p><strong>Source:</strong> FERMAT, Volume 1, Article 2, Jan.-Feb., 2014</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> Recently, ultra-wideband (UWB) technology
+                        has attracted much attention both in the industry and
+                        academia due to its low cost, potential to handle high data
+                        rate and relatively low power requirement. A UWB
+                        antenna is one of the key components for realizing the
+                        UWB systems. We note, however, that designing a UWB
+                        antenna to deliver high performance is much more
+                        challenging than it is when dealing with the conventional
+                        narrowband antennas. Typically, it is desirable for a
+                        UWB antenna to cover a wide bandwidth spanning the
+                        entire range of 3.1-10.6GHz, to produce an
+                        omnidirectional radiation pattern, and to have a compact
+                        size as well as a simple configuration. This paper focuses
+                        on the design and analysis of planar printed UWB
+                        antennas, and provides some representative performance
+                        results of previously designed UWB antennas to illustrate
+                        the advantages as well as drawbacks of these antennas.
+                        Present state of development of UWB antennas is
+                        reviewed in the paper and some future trends of UWB
+                        antenna designs are presented. Furthermore, the topics of
+                        wideband enhancement techniques for UWB antennas,
+                        incorporating band-rejection characteristics and
+                        reconfigurablity are addressed, and their application to
+                        cognitive radio communication systems is examined
+                        in-depth. 
+                         </p>
+                              
+          <p><strong>Index Terms:</strong> Ultra-wide band antenna, band-notched
+            antenna, multi-band antenna, reconfigurable antenna,
+            cognitive radio antenna, slot antenna, CPW-fed structure,
+            microstrip-fed structure 
+          </p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/articles_fermat/Li-ART-2014-Vol1-Jan_Feb-002.pdf" target="_blank"> A Survey of Planar Ultra-Wideband Antenna Designs and Their Applications</a>
+		 </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>

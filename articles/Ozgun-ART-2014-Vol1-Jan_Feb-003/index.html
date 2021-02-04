@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Recent Developments in Transformation
+                    Optics-aided CEM </h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong>Ozlem Ozgun and Mustafa Kuzuoglu</p>
+<p><strong>Source:</strong> FERMAT, Volume 1, Article 3, Jan.-Feb., 2014</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> This review paper presents a hybrid point of
+                        view that combines computational electromagnetics
+                        (CEM) and transformation electromagnetics/optics
+                        (TEM). The main purpose is to employ the salutary
+                        features of TEM to increase the effectiveness of finite
+                        methods (such as finite element method or finite
+                        difference methods) for solving electromagnetic
+                        boundary value problems. Synergies arising from the
+                        marriage of CEM and TEM enable us to overcome some
+                        of the difficulties, such as challenging meshing issues and
+                        high levels of computational burden, associated with the
+                        finite methods. Our previous studies basically
+                        concentrated on three types of problems: (i) modeling
+                        large-scale or multi-scale electromagnetic scattering
+                        problems; (ii) modeling curved geometries that do not
+                        conform to a Cartesian grid especially in finite difference
+                        methods; and (iii) modeling stochastic electromagnetic
+                        problems having significant uncertainty. The underlying
+                        idea is to insert transformation media into computational
+                        domain in order to alleviate certain difficulties associated
+                        with some of the meshing requirements dictated by the
+                        problem geometry. Our strategy is to create a virtual
+                        “equivalent” problem, which mimics the original
+                        problem, and which enables us to develop efficient and
+                        simple-to-use computer-aided simulation tools to solve it.
+                        This paper reviews some of our previously-published
+                        approaches based on the above strategy, and includes a
+                        discussion of some of the related issues.  
+                         </p>
+                              
+          <p><strong>Index Terms:</strong> Transformation electromagnetics/optics,
+            computational electromagnetics, anisotropic
+            metamaterials, transformation medium, coordinate
+            transformation, finite element method (FEM), finite
+            difference time domain method (FDTD), Monte Carlo,
+            multi-scale, stochastic, rough surface scattering.
+          </p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/articles_fermat/Ozgun-ART-2014-Vol1-Jan_Feb-003.pdf" target="_blank"> Recent Developments in Transformation
+            Optics-aided CEM </a>
+		 </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
