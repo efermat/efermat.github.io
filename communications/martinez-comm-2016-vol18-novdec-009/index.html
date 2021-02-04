@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Spatially-Variant Periodic Structures in
+Electromagnetics</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Noel Martinez, Cesar L. Valle, Stephen M. Kuebler, Javier J. Pazos, Cesar R. Garcia,Eric A. Berry, and Raymond C. Rumpf
+</p>
+		       <p><strong>Source:</strong> FERMAT, Volume 18, Communication 8, Nov-Dec, 2016</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> Periodic structures, or lattices, have proven to be one of the most enabling technologies of the 21st century. They allowed us to make objects invisible, to manipulate light and sound like we do electricity in computer chips, to dramatically reduce size and weight of structures while maintaining mechanical strength, and appear to break fundamental laws of physics. Despite these accomplishments, profound physical mechanisms still remain hidden inside the lattices that have yet to be effectively utilized. Electromagnetic fields cannot be manipulated inside homogeneous media. There must exist an interface, a gradient, or some form of inhomogeneity. Uniform lattices can be compared to homogeneous media that have limited usefulness. To unlock the hidden physics, lattices must be made macroscopically inhomogeneous without also unintentionally deforming the unit cells. Bending, twisting, and otherwise spatially varying a periodic structure in this manner requires impossible geometries, so until recently it has only been accomplished in simple and canonical configurations. A breakthrough by the EM Lab at the University of Texas at El Paso has led to a method for generating spatially-variant lattices (SVLs) without unintentionally deforming the unit cells, thus preserving their electromagnetic properties. Using this tool, the EM Lab is exploring new physics enabled by SVLs. In collaboration with the Kuebler Lab at the University of Central Florida, a spatially-variant photonic crystal (SVPC) was designed that achieved the tightest bend of optical beam ever reported in the literature. This was accomplished using an inexpensive material with low refractive index (n = 1.59). In other work, the EM Lab showed that a spatially-variant anisotropic metamaterial (SVAM) can be used to electromagnetically decouple two electrical components placed in close proximity. This talk will discuss the algorithm for generating SVLs as well as some of the new device concepts it has enabled so far.
+
+</p>
+          <p><strong>Index Terms:</strong> Metamaterials, metasurfaces, photonic crystals, functionally graded, spatially-variant</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Martinez-COMM-2016-Vol18-Nov._Dec.-009.pdf" target="_blank">Spatially-Variant Periodic Structures in
+Electromagnetics
+
+        </a>         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
