@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>The Design of A Focused Sparse Microstrip
+Antenna Array</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Guilin Sun and Qi Zhu</p>
+		       <p><strong>Source:</strong> FERMAT, Volume 18, Communication 12, Nov-Dec, 2016</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> Focused antenna array is of interest in many applications for its unique characteristics, by which microwave energy can converge on a determinate spot close to the antenna aperture in the near-field region. One of the important applications of focused antenna array is remote sensing (non-contact sensing); focused array can focus the microwave energy on the target point to get desired parameters [1][2]. Microwave-induced hyperthermia is another important application. The power deposition is required to be strictly confined on cancerous tissues without heating the adjacent healthy tissues [3]. RFID reader also is an important application [4][5], by the use of focused array, it becomes conveniently to limit the interference between nearby portals and reduce reading errors due to multipath phenomena.</p><p>
+
+	In this paper, the design of focused sparse array has been discussed. Sparse array technique has been used to depress the sidelobe level (SLL) in the focal plane when the averaged distance between adjacent antennas is beyond one wavelength. Numerical result reveals that sparse array technique can depress SLL in focal plane effectively without extending the focal spot size. Finally, a focused array sparse array composed of 16 microstrip antennas working at X band has been designed as an example. Simulated results demonstrate the efficiency of spare array technique on depressing SLL in the focal plane.</p>
+          <p><strong>Index Terms:</strong>  focused array; sidelobe; sparse array; near-field</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Sun-COMM-APS2016-2016-Vol18-Nov._Dec.-013.pdf" target="_blank"> The Design of A Focused Sparse Microstrip
+Antenna Array</a>         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
