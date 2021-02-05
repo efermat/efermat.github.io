@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>A Full-Solid-Angle Scanning Planar
+ Phased Array</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Zixuan Yi, and Qi Zhu</p>
+		       <p><strong>Source:</strong> FERMAT, Volume 18, Communication 10, Nov-Dec, 2016</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong>A full-solid-angle (FSA) scanning planar phased array is proposed in this paper. The identical array element is consisting of two identical back-to-back microstrip antennas, which can be controlled independently by a power control unit. To verify the proposed principle, a 4 × 4 elements planar array is designed and simulated. The simulated results demonstrate that the main beam of the array can cover the full-solid-angle with gain fluctuation less than 3 dB and the side lobe level is kept less than -8dB compared with the main lobe of the same scanning state.</p><p>
+
+	Phased arrays are extensively applied in radar and wireless communication systems for their significant advantages of flexible beam scanning, convenient beam controlling and energy management. Wide-angle scanning, as one of the most important characteristics of phased arrays, is frequently needed in these applications [1]. Generally, the scanning range of a traditional passive planar phased array is limited by the beamwidth of its element and is about -55° to 55° [2], which cannot meet the requirements in some applications. Techniques, such as employing wide-beam elements or pattern reconfigurable antennas have been developed to extend the scanning angle [3]-[6]. There is no any report about FSA scanning planar phased arrays so far.</p><p>
+
+	Based on the theory of array, the radiation pattern of a planar array is obtained by multiplying its array factor by the radiation pattern of array element, processing broad beamwidths is the essential require for the elements of an array to realize wide-angle scanning. Although employing an ideal isotropic element is a natural choice, the nonexistence of ideal isotropic element makes it impossible to realize FSA scanning.</p><p>
+
+	In this paper, a novel radiation element composed of two back to back microstrip antennas and a power control unit is proposed. The power control unit is employed to make the radiation element working at four different modes. As example, a 4 × 4 elements planar array is designed by means of the proposed radiation element. Simulated results reveal that the present design can achieve a FSA scanning.
+
+</p>
+          <p><strong>Index Terms:</strong> full-solid-angle scanning; phased array; planar array
+
+</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Yi-COMM-APS2016-2016-Vol18-Nov._Dec.-011.pdf" target="_blank"> A Full-Solid-Angle Scanning Planar
+ Phased Array </a>         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
