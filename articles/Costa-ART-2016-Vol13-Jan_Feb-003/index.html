@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Electromagnetic Absorbers Based on
+Frequency Selective Surfaces</h3>
+		
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Filippo Costa (1) Alireza Kazemzadeh (2) Simone Genovesi (1) Agostino Monorchio (1)</p>
+<p><strong>Source:</strong> FERMAT,Volume 13,Aricle,Jan-Feb,2016</p>
+				  <hr>
+				 
+					<p><strong>Abstract:</strong> Frequency Selective Surfaces (FSSs) are bidimensional arrays of particles arranged in a periodic manner.
+These surfaces can be lossless or lossy, depending on the
+manufacturing process. They can be fabricated by using metallic or
+controlled-resistance surface deposition. Lossy surfaces can be also
+obtained through the integration of lumped components on a
+metallic surface. The use of FSSs has fostered new research lines in
+the design of electromagnetic absorbing surfaces, bringing
+improvements both in terms of bandwidth/thickness ratio
+maximization and in terms of customizability of the absorbing
+bandwidth (narrowband, multi-band, wideband, ultra-wideband) for
+specific applications. Artificial impedance surfaces (or HighImpedance Surfaces, - HIS) are thin resonant cavities synthesized
+by printing a periodic frequency selective surface on the top of a
+grounded dielectric slab. By proper tailoring of the geometrical and
+electrical properties of the FSS as well as the substrate, several
+electrically-thin absorbing designs can be obtained. Ultranarrowband absorbers with extremely stable angular behavior, often
+addressed as metamaterial absorbers, can be realized by exploiting
+only dielectric losses of commercial substrates. Narrowband,
+wideband and ultra-wideband configurations are instead
+implemented by also resorting to ohmic losses in a non-conductive
+FSS. A thorough review of the available absorbers will be presented
+together with multi-band and tunable design techniques.
+Manufacturing processes and practical examples will be also
+addressed, and the most interesting fields of application of the
+presented structures will be described.</p>          
+          <p><strong>Index Terms:</strong> Artificial Magnetic Conductor (AMC),
+Artificial Impedance Surface (AIS), Electromagnetic Absorbers,
+Frequency Selective Surface (FSS), High Impedance Surfaces
+(HIS), Metamaterial. </p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/articles_fermat/Costa-ART-2016-Vol13-Jan_Feb-003.pdf" target="_blank">Electromagnetic Absorbers Based on
+Frequency Selective Surfaces </a> 
+         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
