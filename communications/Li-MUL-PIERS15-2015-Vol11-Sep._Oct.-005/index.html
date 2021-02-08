@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function()
+    {
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+   </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+   <!-- Brand and toggle get grouped for better mobile display -->
+   <div class="navbar-header fixed-brand">
+   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+<a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+</div>
+<!-- navbar-header-->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li class="active">
+<button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+</li>
+</ul>
+</div>
+   <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+   <div id="inc-side-nav"></div>
+    
+   <!-- Page Content -->
+   <div id="page-content-wrapper">
+   <div class="container-fluid xyz">
+   <div class="row">
+   <div class="col-lg-12">            
+				   <h4>3D Frequency Selective Structures
+Using Multilayer PCBs</h4>
+   </div>		   			  
+   </div>
+   <div class="row">
+   <div class="col-lg-12">
+                                   <p><strong>Authors:</strong>Bo Li and Yiming Tang, Zhongxiang Shen</p>
+                                   <p><strong>Source:</strong>FERMAT, Communication, 2017-Vol11-May._Jun.-001</p>
+<hr>
+				 
+                                   <p><strong>Abstract:</strong>Recently, a new class of frequency selective surfaces, named as 3D frequency selective
+structures (FSSs), are reported in order to achieve high performance, such as sharp rolloff
+and wide out-of-band rejection. In these 3D FSS designs, multiple resonators are
+constructed, providing a number of transmission zeros/poles at finite frequencies. High
+performance can then be obtained by controlling locations of these transmission
+zeros/poles. However, the major disadvantage of these 3D FSSs is their complicated
+topologies. Most of them require extra assembly process after fabrication, which will
+increase undesirable errors and uncertainties.
+In this talk, a number of 3D FSSs implemented by using multilayered PCB technology
+are presented. These structures are full printed circuits, which can be fabricated without
+assembly, thus leading to higher fabrication accuracy and suitable for mass production. It
+is therefore feasible for this type of FSS to be applied at high frequency applications, such
+as millimeter-wave systems.</p>
+                              
+                                   <p><strong>Keywords:</strong>3D frequency selective structures, printed circuit board, spatial filters.</p>
+<br>
+<p><strong>View PDF</strong></p>
+                                   <a href="https://archive.org/download/communications_fermat/Li-MUL-PIERS15-2017-Vol21-May._Jun.-001%203D%20Frequency%20Selective%20Structures.......pdf">3D Frequency Selective Structures
+Using Multilayer PCBs</a>
+   </div>	
+   </div>
+   </div>		 
+<hr>		 
+   </div>
+<!-- /#page-content-wrapper -->
+   </div>  <div id="inc-footer"></div>
+<!-- /#wrapper -->
+<!-- jQuery -->
+
+</body>
+<script>	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+   function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+         return false;
+         }
+   if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+         $('#menu ul:visible').slideUp('normal');
+         checkElement.slideDown('normal');
+         return false;
+         }
+         }
+         );
+         }
+$(document).ready(function() {
+initMenu();
+});
+</script>
+</html>
