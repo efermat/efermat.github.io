@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3> Study of the influence of the magnetic field
+                  orientation using Polynomial Chaos
+                  decomposition applied to the pregnant woman
+                  exposure at 50 Hz
+                   </h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> I.Liorni, M. Parazzini
+   , S. Fiocchi & P. Ravazzani </p>
+<p><strong>Source:</strong> FERMAT, Volume 9, Communications 5, May Jun., 2015</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> he modelling of human exposure in realistic exposure scenarios is complex, because
+                     several parameters (e.g., the source design, the frequency band, the orientation of incident fields,
+                     the morphology and posture of subjects) vary and influence the dose. Deterministic dosimetry, so
+                     far used to quantify human exposure to electromagnetic fields (EMF), is highly time consuming if
+                     the variations of those parameters are considered. Stochastic dosimetry is an alternative approach to
+                     assess EMF exposure and consists in building analytical approximations of the exposure at a
+                     parsimonious computational cost. In this study, it was used to assess the influence of magnetic flux
+                     density (B) orientation on fetal exposure at 50 Hz using the polynomial chaos (PC) theory. A PC
+                     expansion of induced electric field (E) in each fetal tissue at 7 months of gestational age (GA) was
+                     built as a function of B orientation. Maximum E in each fetal tissue was estimated for different
+                     exposure configurations and compared with the limits of the International Commission of NonIonising Radiation Protection (ICNIRP) Guidelines 2010. PC theory resulted in an efficient method
+                     to build accurate approximations of E in each fetal tissue. B orientation influenced E with a
+                     variability across tissues in the range from 10% to 25% with respect to the mean value. However,
+                     varying B orientation, maximum E in each fetal tissue was below the limits of ICNIRP 2010.  </p>
+                              
+          <p><strong>Keywords:</strong> fetus; ELF-MF exposure; stochastic dosimetry; polynomial chaos</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Liorni-MUL-2015-Vol9-May_Jun-005.pdf" target="_blank">Study of the influence of the magnetic field
+            orientation using Polynomial Chaos
+            decomposition applied to the pregnant woman
+            exposure at 50 Hz</a>
+		 </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
