@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3> Global Crisis/Sustainability Technologies</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Kenji Uchino </p>
+<p><strong>Source:</strong> FERMAT, Volume 9, Communications 4, May Jun., 2015</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> There are four factors that have influences on engineering: Social/culture/religion,
+                     Technology/science, Economics, and Politics/law. The strength of the impact of these factors
+                     becomes different according to history. Alchemy of the 16th century is an example of
+                     “Socio-Engineering”. From the Christian doctrine, “Heliocentric model” was denied, but
+                     “alchemy” was approved. Religion was controlling science. In the 17th~18th centuries,
+                     people were solved from the spell of religion and engineering based on science and
+                     technology, so-called “Techno-Engineering” is respected instead. In the 18th~19th centuries,
+                     technologies for mass production at low manufacturing cost were required and “EconoEngineering” became mainstream to enhance national strength. The intention of increasing
+                     national wealth and military strength increased friction and that led to the First and Second
+                     World War in the 20th century. Engineering of this period is mainly government-led
+                     production of war weapons, and it was a beginning of “Politico-Engineering”. After the wars,
+                     mass production technologies for the reconstruction/recovery revived, but when the 21st
+                     century began, as a consequent result, environmental degradation, resource depletion, and
+                     food famine have become major problems. Global regulations are strongly called, and the
+                     government-initiated technology (“politico-engineering”) has become important again in
+                     order to overcome the regulations. Politico-Engineering covers (1) legally-regulated normal
+                     technologies such as sustainability, and (2) crisis technologies.
+                     This paper introduces leading actuator/sensor and piezoelectric technologies, relating with
+                     the above “sustainability” and “crisis” technologies, aiming at further research expansion in
+                     this area. The sustainable society requires (a) usage of non-toxic materials (Pb-free
+                     piezoelectrics), (b) disposal technology for existing hazardous materials (high power
+                     ultrasonic transducers), (c) reduction of contamination gas (diesel injection valves), (d) new
+                     energy source creation (piezoelectric renewable energy harvesting systems), and (e) energyefficient device development. Crisis technologies are categorized into five types: (a) natural
+                     disasters (earthquakes, tsunamis, tornadoes, hurricanes, lightning, etc.), (b)
+                     epidemic/infectious diseases (smallpox, polio, measles, and HIV), (c) enormous accident
+                     (Three-Mile-Island core meltdown accident, BP oil spill etc.), (d) intentional accidents (acts
+                     of terrorism, criminal activity, etc.), (e) civil-war, war, territorial aggression </p>
+                              
+          <p><strong>Keywords:</strong> Crisis technology; Sustainability technology; Politico-engineering; Piezoelectric
+            actuator; Pb-free piezoelectrics; Piezoelectric energy harvesting; Ultrasonic cavitation;
+            Ultrasonic motor.</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Uchino-MUL-2015-Vol9-May_Jun-004.pdf" target="_blank">Global Crisis/Sustainability Technologies</a>
+		 </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
