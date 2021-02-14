@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Equivalent Circuit of a Quadraxial Feed
+                    for Ultra-Wide Bandwidth QuadrupleRidged Flared Horn Antennas
+                    </h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Theunis S. Beukman1
+    , Petrie Meyer
+    , Rob Maaskant, Marianna V. Ivashina
+     </p>
+<p><strong>Source:</strong> FERMAT, Volume 13, Communication 18, Jan.-Feb., 2017</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong>  
+                        : The transition from one guided wave to another is important for the integration of different microwave devices. A
+                        quadraxial feeding network was recently proposed by the authors [1], [2] for the quadruple-ridged flared horn (QRFH)
+                        antenna. This feeding technique allows the excitation of the two orthogonal TE11 fundamental modes in a circular quadridged waveguide (QRWG), required for the wideband dual-polarisation operation of a QRFH antenna.  </p>         
+                        <p>The differential excitation of the pin pairs in the quadraxial feed is intended for the integration with differential low-noise
+                            amplifiers (LNAs). Such a compact solution is attractive for the next-generation radio telescopes which require ultra-low
+                            noise performance, hence the necessity for accurate models of the input impedance of the antenna to enable optimal
+                            noise matching with the LNAs.</p>
+                         <p>In this work an equivalent circuit model of the quadraxial feed is presented. The circuit issynthesised by only 3 unknowns
+                            and achieves accurate input impedance for a wide range of dimensions. This model gives insight into the operation of a
+                            quadraxial feed and allows fast synthesis of optimal feeding designs that would ensure a strong excitation of the desired
+                            mode at the input of a QRFH.</p>    
+                        <p><strong>Index Terms:</strong>Ultra wideband antennas, quadruple-ridged waveguides, waveguide transitions, equivalent circuits.  </p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Beukman-MUL-EuCAP15-2016-Vol13-Jan._Feb.-018.pdf" target="_blank">Equivalent Circuit of a Quadraxial Feed
+            for Ultra-Wide Bandwidth QuadrupleRidged Flared Horn Antennas
+            </a> 
+         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
