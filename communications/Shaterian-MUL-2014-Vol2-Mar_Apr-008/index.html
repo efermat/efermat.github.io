@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Hybrid Staggered Perfectly Matched-layers in Non-Staggered Meshless Time-Domain Vector Potential Technique</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Zahra Shaterian, Thomas Kaufmann, and Christophe Fumeaux</p>
+		       <p><strong>Source:</strong> FERMAT, Volume 02, Communication 8, Mar_Apr, 2014</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> In this paper a hybrid algorithm for the implementation of Perfectly Matched
+Layers (PMLs) in the meshless magnetic vector potential technique is proposed. Solving the
+wave equation in time-domain, the magnetic vector potential technique avoids using
+staggered node distributions which are needed for calculating the E and H fields when
+directly solving Maxwell’s equations. However, implementing PMLs with stretched
+coordinate formulation requires auxiliary variables on a staggered (dual) node distribution.
+To avoid defining staggered nodes in the whole computational domain, a hybrid algorithm is
+proposed in this paper: The algorithm keeps a single set of nodes for the magnetic vector
+potential A inside the free space while it uses staggered nodes for A and auxiliary variables
+inside the PML. The hybrid algorithm is validated in a 2D rectangular waveguide and
+numerical reflection coefficients are compared for different thicknesses of the PML and for
+different orders of a polynomial conductivity profile inside the PML. A good agreement
+between theoretical results and converged solutions validates the approach.</p>
+          <p><strong>Index Terms:</strong> Radial point interpolation, meshless methods, magnetic vector potential, wave equation, perfectly matched layer.</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Shaterian-MUL-2014-Vol2-Mar_Apr-008.pdf" target="_blank">Hybrid Staggered Perfectly Matched-layers in Non-Staggered Meshless Time-Domain...</a>         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
