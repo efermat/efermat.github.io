@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Terahertz Reflectarray Antennas: An overview of the
+                  State-of-the-art Technology</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong>Ruyuan Deng1, Fan Yang1, Shenheng Xu1, Paola Pirinoli</p>
+<p><strong>Source:</strong>FERMAT, Volume 6, Communications 1, Nov Dec.,2014 </p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> Reflectarray antenna has emerged as a new generation of high-gain antennas.
+                     Recently, the reflectarray research has been expanded from microwave to THz and optical
+                     frequencies. In this presentation, several design methodologies on THz reflectarray antennas
+                     are reviewed, such as planar patch reflectarrays, 3D structure reflectarrays, and reconfigurable
+                     reflectarrays. Some practical applications of reflectarrays have also been discussed. It is expected
+                     that this overview will stimulate creative THz reflectarray research in the community. </p>                              
+          <p><strong>Index Terms:</strong>Antenna, Reflectarray, Terahertz.</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Yang-MUL-2014-Vol6-Nov_Dec-001.pdf" target="_blank">Terahertz Reflectarray Antennas: An overview of the
+            State-of-the-art Technology</a>         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>

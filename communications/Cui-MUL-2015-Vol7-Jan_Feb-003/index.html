@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Coding Metamaterials, Digital Metamaterials and
+                  Programmable Metamaterials</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong>Tie Jun Cui, Qiang Cheng, Xiang Wan </p>
+<p><strong>Source:</strong>FERMAT, Volume 7, Communications 3, Jan Feb.,2015 </p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> As artificial structures, metamaterials are usually described by macroscopic effective medium parameters, which are named as “analog
+                     metamaterials”. Here, we propose “digital metamaterials” in two steps. Firstly, we present “coding metamaterials” that are composed of only two
+                     kinds of unit cells with 0 and π phase responses, which we name as “0” and “1” elements. By coding “0” and “1” elements with controlled
+                     sequences (i.e., 1-bit coding), we can manipulate electromagnetic (EM) waves and realize different functionalities. The concept of coding
+                     metamaterial can be extended from 1-bit coding to 2-bit or more. In 2-bit coding, four kinds of unit cells with phase responses 0, π/2, π, and 3π/2
+                     are required to mimic “00”, “01”, “10” and “11” elements, which have larger freedom to control EM waves. Secondly, we propose a unique
+                     metamaterial particle which has either “0” or “1” response controlled by a biased diode. Based on the particle, we present “digital metamaterials”
+                     with unit cells having either “0” or “1” state. Using the field-programmable gate array, we realize to control the digital metamaterial digitally. By
+                     programming different coding sequences, a single digital metamaterial has distinct abilities in manipulating EM waves, realizing the
+                     “programmable metamaterials”. The above concepts and physical phenomena are confirmed by numerical simulations and experiments through
+                     metasurfaces.  </p>                              
+          <p><strong>Keywords:</strong>: Coding metamaterial, digital metamaterial, programmable metamaterial, real-time control of metamaterials</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Cui-MUL-2015-Vol7-Jan_Feb-003.pdf" target="_blank">Coding Metamaterials, Digital Metamaterials and
+            Programmable Metamaterials</a>         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>

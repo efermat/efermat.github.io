@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>The Life and Times of the Great Inventor, Nikola Tesla</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Dr. James Breakall </p>
+		       <p><strong>Source:</strong> FERMAT, Volume 02, Communication 4, Mar_Apr, 2014.</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> To celebrate the 150th anniversary of Nikola Tesla in 2006, Prof. Breakall and Mr.
+David Blood presented a very memorable and popular public seminar and
+demonstration for the EE Department at Penn State. At this event, the life and
+times of Nikola Tesla were discussed and several Tesla coils were displayed and
+utilized for various live demos with audience participation. This seminar was
+videotaped and Prof. Breakall will play this DVD and slide presentation at this
+Spring, 2014, EE Graduate Colloquium.</p>
+Nikola Tesla is clearly one of the greatest scientists and inventors in the history of
+the technological development of humankind. His patents and theoretical work
+created conditions for the electrification of the world by his system of poly-phase
+alternating current, the system that is still presently used all over the world. His
+work in the field of high-frequency currents and wireless transmission of
+electromagnetic waves made the development of radio and telecommunications
+possible. Tesla’s research also helped towards the invention of radar, and in many
+ways brought about the development of lighting. Tesla always arrived at an
+invention in a rather unusual way. He first would work out the whole idea of the
+way a device should work to the smallest detail in his mind, and then he would
+“see” how it works, and then he would proceed to prove it theoretically, sketch it,
+and finally make the device itself that would then work without any problem.
+Working things out in his mind and not on paper would insure that his inventions
+would be protected. Nikola Tesla was born in 1856 in Smiljan, a small village near
+Gospić, Croatia.</p>
+At the end of the 19th century in Colorado Springs, CO, Tesla performed various
+experiments with very high voltages and high-frequency currents. In the laboratory
+he managed to produce artificial lightning with the voltage discharge of many
+millions of volts and the length of the lightning of up to 40 meters. Nikola Tesla
+filed a total of some 300 patents all over the world. He received honorary
+doctorates for his work at numerous universities including Columbia University,
+Yale University, University de Poitiers, Polytechnic Institutes of Graz, Vienna and
+Bucharest, Universities of Belgrade, Brno, Grenoble, Paris, Prague, Sofia, and
+Zagreb. Nikola Tesla never married, he left no direct heirs, and he also suffered
+from many phobias. He was fascinated by cleanliness and the number three. At
+the end of his life he liked to keep company with pigeons.</p>
+Besides his native language, Tesla fluently spoke English, French, German,
+Italian, Czech and Hungarian. He died in 1943 in a hotel in New York. To honor the
+great inventor, the unit for magnetic induction in the SI system was named Tesla in
+1960. In 1975, the Institute of Electrical and Electronics Engineers (IEEE)
+established the Nikola Tesla Award that is given to deserving individuals in the
+field of electro-energetics. As commendation for Tesla’s achievements, a crater on
+the Moon carries his name.</p>
+          <p><strong>Index Terms:</strong></p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Breakall-MUL-2014-Vol2-Mar_Apr-004.pdf" target="_blank">The Life and Times of the Great Inventor, Nikola Tesla</a>         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>

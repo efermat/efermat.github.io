@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Beam-steerable Reflectarray Antennas For Space Applications</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong>Kalyan K. Karnati</p>
+<p><strong>Source:</strong>FERMAT, Volume 7, Communications 2, Jan Feb.,2015 </p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> Reflectarray antennas uniquely combine the advantages of parabolic reflectors and phased array antennas. Comprised of planar structures similar to phased
+                     arrays and utilizing quasi-optical excitation similar to parabolic reflectors, reflectarray antennas provide beam steering without the need of complex and lossy feed
+                     networks. In the presented research, a novel theoretical approach to extract the reflection coefficient of reflectarray unit cells is developed. The approach is first applied to
+                     single-resonance unit cell elements under normal and waveguide incidences. Using this theory, effects of different physical parameters on reflection properties of unit cells
+                     are studied without the need of full-wave simulations. Detailed analysis is performed for Ka-band reflectarray unit cells and verified by full-wave simulations. In addition,
+                     an approach to extract the Q factors using full-wave simulations is also presented.
+                     Overall, novel theoretical approaches to analyze the reflection properties of the reflectarray elements using Q factors are developed. The presented theoretical models
+                     provide valuable physical insight utilizing coupling conditions and aid in efficient reflectarray design. In addition, for the first time a continuously tunable reflectarray
+                     operating at Ka-band is presented using BST technology. Due to monolithic integration, the technique can be extended to higher frequencies such as V-band and above.
+                     Later, the Q factor theory is extended to account for the varying incidence angles and polarizations utilizing Floquet modes. Emphasis is laid on elements located on planes
+                     where extremities in performance tend to occur. The antenna element properties are assessed in terms of maximum reflection loss and slope of the reflection phase. A
+                     thorough analysis is performed at Ka band and the results obtained are verified using full-wave simulations. Reflection coefficients over a 749-element reflectarray aperture
+                     for a broadside radiation pattern are presented for a couple of cases and the effects of coupling conditions in conjunction with incidence angles are demonstrated.
+                      Finally, tunable reflectarray elements capacitively loaded with Barium Strontium Titanate (BST) thin film are developed. The effects of substrate thickness, operating
+                     frequency and deposition pressure are shown utilizing coupling conditions and the performance is optimized. To ensure minimum affects from biasing, optimized biasing
+                     schemes are discussed. The proposed unit cells are fabricated and measured, demonstrating the re-configurability by varying the applied E-field. To demonstrate the
+                     concept, a 45 element array is also designed and fabricated. </p>                              
+          <p><strong>Keywords:</strong>Reflectarray, Q factors, coupling conditions, waveguide analysis, Floquet modes, reconfigurable antennas, BST, micro-fabrications, beam-steerable antennas,
+            monolithic integration.</p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Karnati-MUL-2015-Vol7-Jan_Feb-002.pdf" target="_blank">Beam-steerable Reflectarray Antennas For Space Applications</a>         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
