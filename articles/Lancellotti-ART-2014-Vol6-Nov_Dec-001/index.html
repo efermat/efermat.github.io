@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Article | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/efermat.github.io/css/style.css">
+   <script src="/efermat.github.io/js/jquery.min.js"></script>
+   <script src="/efermat.github.io/js/bootstrap.min.js"></script>
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
+	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/efermat.github.io/images/logo.jpg"/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h4>Hybrid LEGO-EFIE Method Applied to Antenna
+                    Problems Comprised of Anisotropic Media</h4>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> V. Lancellotti, D. Melazzi
+       </p>
+<p><strong>Source:</strong> FERMAT, Volume 6, Article 1,Nov._Dec., 2014</p>
+				  <hr>
+				
+                    <p><strong>Abstract:</strong>  Linear embedding via Green’s operators (LEGO)
+                        is a domain decomposition method in which complex radiation
+                        and scattering problems are modelled and solved by means of
+                        interacting electromagnetic “bricks”. We propose an extension of
+                        LEGO able to handle bodies with anisotropic constitutive parameters and metallic objects (e.g., antennas). Since the anisotropic
+                        objects are dealt with LEGO, and the metallic parts are treated
+                        with the electric field integral equation (EFIE), we refer to the
+                        overall approach as hybrid LEGO-EFIE. The characterization
+                        of an electromagnetic brick which embeds an anisotropic object
+                        requires solving a volume integral equation (VIE). Since this
+                        procedure is carried out for each brick independently, the
+                        LEGO approach per se is extremely advantageous over the
+                        direct solution of a global VIE for all the bodies at once.
+                        Nonetheless, we further mix the hybrid LEGO-EFIE approach
+                        with the eigencurrents expansion method in order to tackle
+                        relatively larger problems. The technique is used to analyze
+                        a reconfigurable plasma antenna array (PAA) comprised of
+                        magnetized-plasma tubes placed around a two-dipole antenna
+                        array.
+                        
+                         </p>
+                              
+          <p><strong>Index Terms:</strong> Antennas, anisotropic media, surface integral
+            equations, volume integral equations, equivalence principles,
+            Method of Moments, domain decomposition, macro basis functions, eigencurrents, magnetized plasma, scattering operators,
+            plasma antennas.
+
+            
+          </p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/articles_fermat/Lancellotti-ART-2014-Vol6-Nov_Dec-001.pdf" target="_blank">Hybrid LEGO-EFIE Method Applied to Antenna
+            Problems Comprised of Anisotropic Media
+            
+          </a>
+		 </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>  <div id="inc-footer"></div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
