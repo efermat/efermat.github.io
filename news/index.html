@@ -9,12 +9,12 @@
    <script src="/js/jquery.min.js"></script>
    <script src="/js/bootstrap.min.js"></script>
 
-   <!-- <script>
+   <script>
     $(function(){
-	  $("#inc-side-nav").load("/efermat.github.io/includes/side-nav.html");  
-	  $("#inc-footer").load("/efermat.github.io/includes/footer.html");	  
+	  $("#inc-side-nav").load("/includes/side-nav.html");  
+	  $("#inc-footer").load("/includes/footer.html"); 	  
     });
-  </script> -->
+  </script>
 </head>
 
 <body>
@@ -40,99 +40,8 @@
    </nav>
    <div id="wrapper">
       
-<!--id="inc-side-nav"-->
-      <div >
-         <!-- Sidebar -->
-      <div id="sidebar-wrapper">
-         <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
-            <li id="efermat.github.io">
-               <a href="/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> HOME</a>
-            </li>
-            <li id="about">
-               <a href="/about/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-user fa-stack-1x "></i></span>ABOUT</a>
-            </li>
-<!--             <li id="search"> -->
-<!--                <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-search fa-stack-1x "></i></span>SEARCH</a> -->
-<!--             </li> -->
-            <li id="editors">
-               <a href="/editors/"> <span class="fa-stack fa-lg pull-left"><i class="fa fa-edit fa-stack-1x "></i></span>EDITOR'S CORNER</a>
-            </li>
-            <li id="articles">
-               <a href="/articles/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-book fa-stack-1x "></i></span>ARTICLES</a>
-            </li>
-            <li id="communications">
-               <a href="/communications/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-signal fa-stack-1x "></i></span>COMMUNICATIONS</a>
-            </li>
-            <li id="forum">
-               <a href="/forum/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-forumbee fa-stack-1x "></i></span>FORUM</a>
-            </li>
-	    <li id="education">
-               <a href="/education/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-institution fa-stack-1x "></i></span>EDUCATION</a>
-            </li>
-	    <li id="multimedia">
-               <a href="/multimedia/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-file-video-o fa-stack-1x "></i></span>MULTIMEDIA</a>
-            </li>
-	    <li id="news">
-               <a href="/news/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-newspaper-o fa-stack-1x "></i></span>NEWS & VIEWS</a>
-            </li>
-	    <li id="guidelines">
-               <a href="/guidelines/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-info-circle fa-stack-1x "></i></span>SUBMISSION GUIDELINES</a>
-            </li>
-	    <!-- <li id="comments"> -->
-<!--                <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-comment fa-stack-1x "></i></span>COMMENTS</a> -->
-<!--             </li>	 -->
-			
-         </ul>
-		
-      </div>
-      <!-- /#sidebar-wrapper -->
-
-      <script>
-      	var loc = window.location.href;
-  	var str = loc.split("/")[2];  //efermat.github.io
-  	var str2 = loc.split("/")[3];  //about
-	if(str.localeCompare("") == 0 || str2.localeCompare("") == 0)
-          $("#efermat.github.io").addClass("active");
-  	else{
-    	  switch(str2){
-	    case "about":
-	      $("#about").addClass("active");
-	      break;
-	  case "search":
-	      $("#search").addClass("active");
-	      break;
-	  case "editors":
-	      $("#editors").addClass("active");
-	      break;
-	  case "articles":
-	      $("#articles").addClass("active");
-	      break;
-	  case "communications":
-	      $("#communications").addClass("active");
-	      break;
-	  case "forum":
-	      $("#forum").addClass("active");
-	      break;		  
-	  case "education":
-	      $("#education").addClass("active");
-	      break;
-	  case "multimedia":
-	      $("#multimedia").addClass("active");
-	      break;		
-	  case "news":
-	      $("#news").addClass("active");
-	      break;
-	  case "guidelines":
-	      $("#guidelines").addClass("active");
-	      break;
-	  case "comments":
-	      $("#comments").addClass("active");
-	      break;		  
-	  }		
-	}
-      </script>	      
-
-      </div>
+<!---->
+      <div id="inc-side-nav"> </div>
 	   
       <!-- Page Content -->
       <div id="page-content-wrapper">
