@@ -5,11 +5,6 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
    <link rel="stylesheet" href="/css/style.css">
-<!-- 	  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
-   <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-   <link rel="manifest" href="./images/site.webmanifest">
    <script src="/js/jquery.min.js"></script>
    <script src="/js/bootstrap.min.js"></script>  
    
@@ -18,7 +13,7 @@
     $(function(){
 		$("#inc-side-nav").load("/includes/side-nav.html");  
     });
-  </script> 
+  </script>	
 
 </head>
 
@@ -390,8 +385,12 @@
       </div>
       <!-- /#page-content-wrapper -->
 	  
-	   <div class="footer">                     
-        <p> &copy; Copyright 2020 FERMAT | All Rights Reserved </p>
+	   <div class="footer"> 
+		&copy;                  
+		<script type="text/JavaScript">
+			var theDate=new Date();
+			document.write( "Copyright 2020 - " + theDate.getFullYear() + " FERMAT | All Rights Reserved");
+		</script>
 		<p><strong>"FERMAT is published under the auspices of the University of Central Florida"</strong></p>
 		<p>ISSN 2470-4202</p>       
       </div>
