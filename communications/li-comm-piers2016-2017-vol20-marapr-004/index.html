@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <title>Communications | Fermat</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="manifest" href="/images/site.webmanifest">
+   <script src="/js/jquery.min.js"></script>
+   <script src="/js/bootstrap.min.js"></script> 
+   <script>
+    $(function(){
+	  $("#inc-side-nav").load("/includes/side-nav.html");  
+	  $("#inc-footer").load("/includes/footer.html"); 	  
+    });
+  </script>
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default no-margin">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+</button>
+         <a class="navbar-brand" href="/efermat.github.io/"><img class="logo-img" src="/images/logo.jpg "/></a>
+      </div>
+      <!-- navbar-header-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li class="active">
+               <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+               </button>
+            </li>
+			
+         </ul>
+      </div>
+      <!-- bs-example-navbar-collapse-1 -->
+   </nav>
+   <div id="wrapper">
+      <div id="inc-side-nav"></div>
+    
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+			<div class="row">
+               <div class="col-lg-12">            
+				   <h3>Accelerated generation of Characteristic Basis Functions Using Randomized Singular Value Decomposition</h3>
+               </div>		   			  
+            </div>
+			
+			<div class="row">
+               <div class="col-lg-12">
+<p><strong>Authors:</strong> Chao Li, Raj Mittra </p>
+<p><strong>Source:</strong>  FERMAT, Volume 20, Communication 4, Mar-Apr., 2017</p>
+				  <hr>
+				 
+                    <p><strong>Abstract:</strong> It has been demonstrated in the literature on Characteristic Basis Function Method (CBFM) that higher compression rate can be achieved by using larger blocks while carrying out domain decomposition in the context of CBFM [1]. However, the increased degrees of freedom (DOFs) in large domains make the generation of the Characteristic Basis Functions (CBFs) very time- and memory-consuming for the following reasons: (a) Impedance matrices for each domain need to be calculated; (b) Singular Value Decomposition (SVD) must be carried out to remove the redundancy between the CBFs. To mitigate the above problem, Multilevel CBFM (MLCBFM) has been proposed. Also, similar to MLCBFM, a hybrid approach namely the hybrid CBFM/ACA/UV method has been developed recently to address the same issue [2]. By using the UV technique, the computational time and memory complexity required by the
+                     matrix filling process can be decreased from O(B N2RWG ) to O(B NRWG log NRWG ), where B is the number of blocks and NRWG is the average number of RWGs in each block. Compared to MLCBFM, the hybrid CBFM/ACA/UV has the advantage that it does not require the generation of either the CBFs or the reduced matrix at the lower level (two-level domain decomposition policy is normally adopted for MLCBFM).
+                     In this work, a randomized singular value decomposition (rSVD) approach [3] is introduced in order to further accelerate the generation of the CBFs. It has been demonstrated that rSVD is capable of decomposing a rank-deficient matrix with dimension exceeding 300,000 in less than 10 seconds [4]. Using a random projection method, the decomposition can be implemented in a lower-dimensional space, and therefore the singular vectors (CBFs) can be derived in a highly efficient way.
+                     Illustrative examples will be included in the presentation to demonstrate the efficacy of the proposed approach.
+                      </p>         
+                  <p><strong>Index Terms:</strong> MLCBFM, rSVD, CBF Generation </p>
+			   <br>
+         <p><strong>View PDF</strong></p>
+       
+         <a href="https://archive.org/download/communications_fermat/Li-Comm-PIERS2016-2017-Vol20-Mar._Apr.-004.pdf" target="_blank">Accelerated generation of Characteristic Basis Functions Using Randomized Singular Value Decomposition</a> 
+         
+         </div>	
+			</div>
+         </div>		 
+		 
+		 <hr>		 
+      </div>
+      <!-- /#page-content-wrapper -->
+	
+   </div>   <div class="footer" style="position: fixed;"> 
+			&copy;                  
+			<script type="text/JavaScript">
+				var theDate=new Date();
+				document.write( "Copyright 2020 - " + theDate.getFullYear() + " FERMAT | All Rights Reserved");
+			</script>
+			<p><strong>"FERMAT is published under the auspices of the University of Central Florida"</strong></p>
+			<p>ISSN 2470-4202</p>       
+		  </div>
+   <!-- /#wrapper -->
+   <!-- jQuery -->
+
+</body>
+
+   <script>
+	
+   $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+   </script>
+</html>
